@@ -16,4 +16,4 @@ export const pool = mysql.createPool(mysql_config).promise();
 process.on("exit", () => {
     pool.destroy()
     console.log("Se cerro la conexión a la base de datos :)")
-})
+

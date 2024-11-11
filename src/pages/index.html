@@ -7,8 +7,9 @@
   <title>Template Code - Checkout Pro</title>
   <meta charset="utf-8">
   <link rel="stylesheet" type="text/css" href="css/index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   <script src="https://sdk.mercadopago.com/js/v2" crossorigin="anonymous"></script>
-  <link rel="icon" href="src/client/img/Hola mundo animal.ico" type="image/x-icon">
+  <link rel="icon" href="/img/Hola mundo animal.ico" type="image/x-icon">
 
 </head>
 
@@ -16,7 +17,7 @@
 
   <nav>
     <div class="left">
-      <span>Hola Mundo Animal 🐶</span>
+      <a href="/">Hola Mundo Animal 🐶</a>
     </div>
     <div class="right">
       <button id="open-cart"></button>
@@ -37,8 +38,10 @@
         <h1>¡Únete a nuestra comunidad PetShop!</h1>
         <p>Inicia sesión y descubre <strong>ofertas exclusivas</strong>, <strong>beneficios para miembros</strong>, y un
           seguimiento fácil de tus <strong>pedidos</strong>.</p>
-        <a href="/login">Inicia sesión</a>
+        <a href="/login"  class="btn-contacto" style="margin-right: 30px;margin-left: 15px;">Inicia sesión</a>
+        <a href="/contacto" class="btn-contacto">Contactanos</a>
       </div>
+
 
       <img src="/assets/perrito_banner.png" alt="perrito banner">
     </div>
@@ -102,6 +105,9 @@
       <div class="container">
         <span>Carrito vacío 🛒</span>
       </div>
+      <div class="button-cont">
+        <a id="calcularEnvioBtn" href="/envios">Calcular costo de envío</a>
+      </div>
     </aside>
   </main>
 
@@ -109,7 +115,15 @@
 </body>
 
 <footer>
-  Desarrollado por CodiPro
+  <div class="footer-content">
+    <span>&copy; 2024 Hola mundo animal!. Todos los derechos reservados.</span>
+    <div class="social-links">
+      <a href="https://facebook.com" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+      <a href="https://twitter.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+      <a href="https://instagram.com" target="_blank"><i class="fab fa-instagram"></i> Instagram</a>
+    </div>
+    <p>Desarrollado por CodiPro</p>
+  </div>
 </footer>
 
 </html>
